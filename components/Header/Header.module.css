@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 171px 8px;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.logoIcon {
+  fill: var(--primary);
+}
+
+.navigation {
+  display: flex;
+  gap: 32px;
+}
+
+.navigation li::before {
+  content: '#';
+  color: var(--primary);
+}
+
+.activeItem {
+  font-weight: 500;
+  color: #fff;
+  transition:
+    0.2s color ease-in-out,
+    0.2s font-weight ease-in-out;
+}
